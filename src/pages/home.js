@@ -1,5 +1,5 @@
 import React from 'react';
-import ModelViewer from '../components/modelViewer'; // Assuming you have a ModelViewer component
+// import ModelViewer from '../components/modelViewer'; // Assuming you have a ModelViewer component
 import Chat from '../components/chat'; // Assuming you have a Chat component
 // import Spline from '@splinetool/react-spline';
 

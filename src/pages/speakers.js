@@ -33,8 +33,8 @@ const Speakers = () => {
             <h3>{speaker.name}</h3>
             <p>{speaker.bio}</p>
             <div className="social-links">
-              <a href="#" className="social-link">🌐 LinkedIn</a>
-              <a href="#" className="social-link">🐦 Twitter</a>
+              <a href="https://www.linkedin.com/feed/" className="social-link">🌐 LinkedIn</a>
+              <a href="https://x.com/?lang=en" className="social-link">🐦 X</a>
             </div>
           </div>
         ))}
