@@ -1,0 +1,151 @@
+/* === BODY & GENERAL STYLING === */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Deep Black */
+  color: #E0F2F1; /* Soft Greenish White */
+}
+
+.home {
+  padding: 20px;
+  max-width: 1200px; /* Center content and limit width */
+  margin: auto; /* Center the home section */
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 60px 20px; /* Increased padding for a more spacious feel */
+  background-color: #1A1A1A; /* Dark Grey for Hero Section */
+  border-bottom: 3px solid #4CAF50;
+  box-shadow: 0 4px 20px rgba(76, 175, 80, 0.3); /* Enhanced shadow */
+  border-radius: 12px; /* Rounded corners for the hero section */
+}
+
+/* === SECTION STYLING === */
+.speakers-section, .events-section, .chat-section {
+  margin: 40px 0;
+  padding: 20px; /* Added padding for better spacing */
+  background-color: #1E1E1E; /* Dark Grey for Section Background */
+  border-radius: 12px; /* Rounded corners for sections */
+}
+
+/* === CARD LAYOUT === */
+.speaker-list, .event-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center the cards */
+}
+
+.speaker-card, .event-card {
+  border: 2px solid #4CAF50;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 16px;
+  background-color: #2A2A2A; /* Slightly lighter grey for card background */
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(76, 175, 80, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speaker-card:hover, .event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 30px rgba(76, 175, 80, 0.7); /* Enhanced Glow Effect */
+}
+
+/* === IMAGES === */
+.speaker-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #4CAF50; /* Green Ring for Emphasis */
+}
+
+/* === TEXT HEADINGS === */
+h1, h2 {
+  color: #4CAF50; /* Vibrant Green */
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #4CAF50, #66BB6A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0; /* Remove default margin */
+}
+
+/* === BUTTONS === */
+button {
+  background-color: #4CAF50;
+  color: #121212;
+  border: none;
+  border-radius: 8px; /* Slightly larger radius for buttons */
+  padding: 12px 24px; /* Increased padding for better touch targets */
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.5);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #388E3C;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.8);
+  transform: scale(1.05); /* Slight lift on hover */
+}
+
+/* === LINKS === */
+a {
+  color: #4CAF50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #388E3C;
+  text-decoration: underline;
+}
+
+/* === CHAT PLACEHOLDER === */
+.chat-placeholder {
+  background-color: #4CAF50;
+  color: #121212;
+  padding: 12px; /* Increased padding for better appearance */
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* === FUTURISTIC PULSE EFFECT === */
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 10px #4CAF50; }
+  50% { box-shadow: 0 0 25px #4CAF50; }
+  100% { box-shadow: 0 0 10px #4CAF50; }
+}
+
+.glow {
+  animation: pulseGlow 2s infinite alternate; /* Continuous glowing effect */
+}
+
+/* === FOOTER STYLING === */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1A1A1A; /* Dark Grey for Footer */
+  color: #E0F2F1; /* Soft Greenish White */
+  border-top: 3px solid #4CAF50;
+  margin-top: 40px; /* Space above footer */
+}
+
+/* === MEDIA QUERIES === */
+@media (max-width: 768px) {
+  .speaker-card, .event-card {
+    width: 90%; /* Full width on smaller screens */
+  }
+
+  .hero {
+    padding: 40px 10px; /* Adjust padding for smaller screens */
+  }
+
+  button {
+    padding: 10px 15px; /* Adjust button size for smaller screens */
+  }
+}
